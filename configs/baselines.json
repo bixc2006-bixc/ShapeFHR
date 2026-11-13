@@ -1,0 +1,70 @@
+{
+  "cnn1d": {},
+  "transformer_only": {
+    "d_model": 64,
+    "nhead": 8,
+    "num_layers": 2,
+    "dim_feedforward": 256
+  },
+  "inception_time": {},
+  "tcn": {},
+  "mlp_stat": {},
+  "shapelet_cnn_attention": {},
+  "original_shapeformer": {
+    "d_spe": 128,
+    "d_gen": 64,
+    "nhead": 8,
+    "num_layers": 1,
+    "dim_feedforward": 256,
+    "generic_kernel_size": 8,
+    "generic_stride": 8,
+    "shapelet_match_window": 200,
+    "match_distance": "cid"
+  },
+  "freconvnet": {
+    "architecture": {
+      "patch_size": 16,
+      "patch_stride": 16,
+      "downsample_ratio": 2,
+      "ffn_ratio": 2,
+      "num_blocks": [
+        1,
+        1
+      ],
+      "dims": [
+        32,
+        64
+      ]
+    }
+  },
+  "edgemtsc": {
+    "architecture": {
+      "widthwise_kernel_size": 13,
+      "hidden_channels": [
+        256,
+        64
+      ]
+    }
+  },
+  "fetalet": {},
+  "xgboost_stat": {
+    "training": {
+      "rounds": 500,
+      "max_depth": 4,
+      "eta": 0.03,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "tree_method": "hist"
+    }
+  },
+  "shapelet_xgboost": {
+    "training": {
+      "rounds": 500,
+      "max_depth": 4,
+      "eta": 0.03,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "tree_method": "hist"
+    }
+  }
+}
